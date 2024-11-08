@@ -3,11 +3,17 @@
 }
 .icontv {
     width: 20px;
+    margin-inline: 1rem;
+    padding-bottom: 4px;
+    padding-top: 4px;
 }
 .film img {
 width: 100%;
 }
+.logo {
+    width: 100px;
 
+}
 body {
     background-color: #0F0F0F;
 }
@@ -15,9 +21,22 @@ nav {
     background-color: #0F0F0F;
 }
 
+.btnnav{
+    border: 1px solid #606060;
+    padding-inline: 1rem;
+}
 .btn-footer {
     background-color: #0F0F0F;
     border: 1px solid #838383;
     color:#838383 ;
     
+}
+.zoom:hover {
+    transform: scale(1.1);
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.social {
+    width: 50px;
 }

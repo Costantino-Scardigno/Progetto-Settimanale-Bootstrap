@@ -14,11 +14,10 @@
   </head>
   <body>
     <nav
-      class="navbar navbar-expand navbar-dark  px-sm-4 px-md-4 px-lg-4"
+      class="navbar  navbar-expand-md navbar-dark px-2  px-sm-4 px-md-4 px-lg-4"
     >
       <div class="container-fluid p-0">
-        <img
-          style="width: 5%"
+        <img class="px-2 logo"
           src="./assets/netflix_logo_modified.png"
           alt=""
         />
@@ -40,144 +39,181 @@
         >
           <ul class="navbar-nav px-lg-4">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a target="_blank" class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Tv Shows</a>
+              <a target="_blank" class="nav-link" href="#">Tv Shows</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Moves</a>
+              <a target="_blank" class="nav-link" href="#">Moves</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Recently Added</a>
+              <a target="_blank" class="nav-link" href="#">Recently Added</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">My List</a>
+              <a target="_blank" class="nav-link" href="#">My List</a>
             </li>
           </ul>
         </div>
         <div class="col-sm-2 col-md-4 d-flex justify-content-end align-items-center">
           <img class="ps-3" src="./assets/SVG/search.svg" alt="iconsearch" />
-          <a class="ps-3 text-white text-decoration-none" href="#">KIDS</a>
+          <a target="_blank" class="ps-3 text-white text-decoration-none" href="#">KIDS</a>
           <img class="ps-3" src="./assets/SVG/bell-fill.svg" alt="" />
-          <a class="d-block" href="#" id="imageDropdown" data-bs-toggle="dropdown">
+          <a target="_blank" class="d-block" href="#" id="imageDropdown" data-bs-toggle="dropdown">
             <img class="ps-3 icons"  src="./assets/kids_icon.png" />
           </a>
           <ul class="dropdown-menu" role="menu" aria-labelledby="imageDropdown">
             <li role="presentation">
-              <a role="menuitem" tabindex="-1" href="#">Account</a>
+              <a target="_blank" role="menuitem" tabindex="-1" href="#">Account</a>
             </li>
             <li role="presentation">
-              <a role="menuitem" tabindex="-1" href="#">Menu item 2</a>
+              <a target="_blank" role="menuitem" tabindex="-1" href="#">Menu item 2</a>
             </li>
             <li role="presentation">
-              <a role="menuitem" tabindex="-1" href="#">Menu item 3</a>
+              <a target="_blank" role="menuitem" tabindex="-1" href="#">Menu item 3</a>
             </li>
             <li role="presentation" class="divider"></li>
             <li role="presentation">
-              <a role="menuitem" tabindex="-1" href="#">Menu item 4</a>
+              <a target="_blank" role="menuitem" tabindex="-1" href="#">Menu item 4</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <article class="px-sm-4 px-md-4 px-lg-4">
-      <div class="container-fluid p-0">
+    <article class="px-4 px-sm-4 px-md-4 px-lg-4">
         <div class="row">
-          <div class="d-flex mt-sm-4 mt-md-4 mt-lg-4">
-            <h1 class=" fw-semibold text-white">TV Shows</h1>
-            <div class="d-flex align-items-center col-8">
-              <button
-                class="ms-5 btn-sm bg-black dropdown-toggle border border-2-white rounded-0 text-white px-4"
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Genres
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Horror</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-3 text-start text-white pt-3">
+              <h3 class="fw-semibold fs-1">TV Shows</h3>
             </div>
-            <div class="col-1 d-flex align-items-center justify-content-end">
-              <div class="border col-3 p-2">
-                <img class="icontv" src="./assets/SVG/text-left.svg" alt="" />
+            <div class=" d-flex col-12 col-sm-4 col-md-4 col-lg-6 text-start align-items-center">
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle text-white btnnav" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Genres
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Horror</a></li>
+                      <li><a class="dropdown-item" href="#">Fantasy</a></li>
+                    </ul>
+                  </div>
               </div>
-              <div class="border col-3 p-2">
-                <img class="icontv" src="./assets/SVG/grid.svg" alt="" />
-              </div>
+    
+             <div class=" col-12 col-sm-4 col-md-4 col-lg-3 text-end d-flex align-items-center justify-content-end">
+                <div class="d-inline border">
+                    <img class="icontv" src="./assets/SVG/text-left.svg" alt="">
+                </div>
+                <div class="d-inline border">
+                    <img class="icontv" src="./assets/SVG/grid.svg" alt="">
+                </div>
+             </div>
+             
+            
             </div>
-          </div>
-        </div>
-      </div>
+         </div>
+
+            
+
+      <!-- Trending Now film-->>
       <h2 class="text-white fw-medium mt-4 fs-5 ">Trending Now</h2>
       <div class="container-fluid p-0 m-0 film">
         <div class="row">
-          <div class="col-12 col-md-4 col-sm-6 col-lg-4 col-xl-2 px-0 pe-1 pb-md-1 pb-sm-1 p-1">
-            <img src="./assets/media/media0.webp" alt="" />
+          <div class="col-12 col-md-4 col-sm-6 col-lg-4 col-xl-2 px-0 pe-1 pb-md-1 pb-sm-1 p-1 ">
+            <a target="_blank" target="_blank" href="https://www.netflix.com/it/"> 
+                <img  class="zoom" src="./assets/media/media0.webp" alt="" />
+            </a>
           </div>
           <div class="col-12 col-md-4 col-sm-6 col-lg-4 col-xl-2 px-0 pe-1 pb-sm-1 p-1">
-            <img src="./assets/media/media1.jpg" alt="" />
+            <a target="_blank" href="https://www.netflix.com/it">
+                <img class="zoom" src="./assets/media/media1.jpg" alt="" />
+            </a>
           </div>
           <div class="col-12 col-md-4 col-sm-6 col-lg-4 col-xl-2 px-0 pe-1 pb-sm-1 p-1">
-            <img src="./assets/media/media10.jpg" alt="" />
+            <a target="_blank" href="https://www.netflix.com/it/">
+                <img class="zoom" src="./assets/media/media10.jpg" alt="" />
+            </a>
           </div>
           <div class="col-12 col-md-4 col-sm-6 col-lg-4 col-xl-2 px-0 pe-1 pb-sm-1 p-1">
-            <img src="./assets/media/media11.jpg" alt="" />
+            <a target="_blank" href="https://www.netflix.com/it/">
+                <img class="zoom" src="./assets/media/media11.jpg" alt="" />
+            </a>
           </div>
           <div class="col-12 col-md-4 col-sm-6 col-lg-4 col-xl-2 px-0 pe-1 pb-sm-1 p-1">
-            <img src="./assets/media/media12.jpg" alt="" />
+            <a target="_blank" href="https://www.netflix.com/it/">
+                <img class="zoom" src="./assets/media/media12.jpg" alt="" />
+            </a>
           </div>
           <div class="col-12 col-md-4 col-sm-6 col-lg-4 col-xl-2 px-0 pe-1 pb-sm-1 p-1">
-            <img src="./assets/media/media13.jpg" alt="" />
+            <a target="_blank" href="https://www.netflix.com/it/">
+                <img class="zoom" src="./assets/media/media13.jpg" alt="" />
+            </a>
           </div>
         </div>
         <h2 class="text-white fw-medium mt-4 fs-5 ">Watch It Again</h2>
       <div class="container-fluid p-0  film">
         <div class="row">
-          <div class="col-12 col-md-4 col-sm-6 col-lg-4 col-xl-2 px-0 pe-1 pb-md-1 pb-sm-1">
-            <img src="./assets/media/media14.webp" alt="" />
+          <div class="col-12 col-md-4 col-sm-6 col-lg-4 col-xl-2 px-0 pe-1 pb-md-1 pb-sm-1 p-1">
+            <a target="_blank" href="https://www.netflix.com/it/">
+                <img class="zoom" src="./assets/media/media14.webp" alt="" />
+            </a>
           </div>
           <div class="col-12 col-md-4 col-sm-6 col-lg-4 col-xl-2 px-0 pe-1 pb-sm-1 p-1">
-            <img src="./assets/media/media15.jpg" alt="" />
+            <a target="_blank" href="https://www.netflix.com/it/">
+                <img class="zoom" src="./assets/media/media15.jpg" alt="" />
+            </a>
           </div>
           <div class="col-12 col-md-4 col-sm-6 col-lg-4 col-xl-2 px-0 pe-1 pb-sm-1 p-1">
-            <img src="./assets/media/media16.webp" alt="" />
+            <a target="_blank" href="https://www.netflix.com/it/">
+                <img class="zoom" src="./assets/media/media16.webp" alt="" />
+            </a>
           </div>
           <div class="col-12 col-md-4 col-sm-6 col-lg-4 col-xl-2 px-0 pe-1 pb-sm-1 p-1">
-            <img src="./assets/media/media17.jpg" alt="" />
+            <a target="_blank" href="https://www.netflix.com/it/">
+                <img class="zoom" src="./assets/media/media17.jpg" alt="" />
+            </a>
           </div>
           <div class="col-12 col-md-4 col-sm-6 col-lg-4 col-xl-2 px-0 pe-1 pb-sm-1 p-1">
-            <img src="./assets/media/media18.jpg" alt="" />
+            <a target="_blank" href="https://www.netflix.com/it/">
+                <img class="zoom" src="./assets/media/media18.jpg" alt="" />
+            </a>
           </div>
           <div class="col-12 col-md-4 col-sm-6 col-lg-4 col-xl-2 px-0 pe-1 pb-sm-1 p-1">
-            <img src="./assets/media/media2.webp" alt="" />
+            <a target="_blank" href="https://www.netflix.com/it/"> 
+                <img class="zoom" src="./assets/media/media2.webp" alt="" />
+            </a>
           </div>
         </div>
         <h2 class="text-white fw-medium mt-4 fs-5 ">New Releases</h2>
       <div class="container-fluid p-0 m-0 film p-0">
         <div class="row">
-          <div class="col-12 col-md-4 col-sm-6 col-lg-4 col-xl-2 px-0 pe-1 pb-md-1 pb-sm-1">
-            <img src="./assets/media/media20.jpg" alt="" />
+          <div class="col-12 col-md-4 col-sm-6 col-lg-4 col-xl-2 px-0 pe-1 pb-md-1 pb-sm-1 p-1">
+            <a target="_blank" href="https://www.netflix.com/it/"> 
+                <img class="zoom" src="./assets/media/media20.jpg" alt="" />
+            </a>
           </div>
           <div class="col-12 col-md-4 col-sm-6 col-lg-4 col-xl-2 px-0 pe-1 pb-sm-1 p-1">
-            <img src="./assets/media/media21.webp" alt="" />
+            <a target="_blank" href="https://www.netflix.com/it/">
+                <img class="zoom" src="./assets/media/media21.webp" alt="" />
+            </a>
           </div>
           <div class="col-12 col-md-4 col-sm-6 col-lg-4 col-xl-2 px-0 pe-1 pb-sm-1 p-1">
-            <img src="./assets/media/media22.webp" alt="" />
+            <a target="_blank" href="https://www.netflix.com/it/">
+                <img class="zoom" src="./assets/media/media22.webp" alt="" />
+            </a>
           </div>
           <div class="col-12 col-md-4 col-sm-6 col-lg-4 col-xl-2 px-0 pe-1 pb-sm-1 p-1">
-            <img src="./assets/media/media23.webp" alt="" />
+            <a target="_blank" href="https://www.netflix.com/it/">
+                <img class="zoom" src="./assets/media/media23.webp" alt="" />
+            </a>
           </div>
           <div class="col-12 col-md-4 col-sm-6 col-lg-4 col-xl-2 px-0 pe-1 pb-sm-1 p-1">
-            <img src="./assets/media/media24.jpg" alt="" />
+            <a target="_blank" href="https://www.netflix.com/it/">
+                <img class="zoom" src="./assets/media/media24.jpg" alt="" />
+            </a>
           </div>
           <div class="col-12 col-md-4 col-sm-6 col-lg-4 col-xl-2 px-0 pe-1 pb-sm-1 p-1">
-            <img src="./assets/media/media25.webp" alt="" />
+            <a target="_blank" href="https://www.netflix.com/it/">
+                <img class="zoom" src="./assets/media/media25.webp" alt="" />
+            </a>
           </div>
         </div>
       </div>
@@ -186,51 +222,51 @@
         <div class="container mt-5">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="px-2" src="./assets/SVG/icons8-facebook (1).svg" alt="">
-                    <img class="px-2" src="./assets/SVG/icons8-instagram-vecchio (1).svg" alt="">
-                    <img class="px-2" src="./assets/SVG/icons8-twitter (1).svg" alt="">
-                    <img class="px-2" src="./assets/SVG/icons8-youtube (1).svg" alt="" >
+                    <img class="pe-3 social" src="./assets/SVG/icons8-facebook (1).svg" alt="">
+                    <img class=" pe-3 social" src="./assets/SVG/icons8-instagram-vecchio (1).svg" alt="">
+                    <img class="pe-3 social" src="./assets/SVG/icons8-twitter (1).svg" alt="">
+                    <img class=" social" src="./assets/SVG/icons8-youtube (1).svg" alt="" >
                 </div>
             </div>
             <div class="row">
 
-                <div class="col-lg-3  d-flex mt-lg-4">
+                <div class="col-6 col-sm-6  col-sm-6  col-md-4 col-lg-3  d-flex mt-lg-4 px-2">
                     <p class="text-dark-emphasis">Audio and subtitles</p>
                 </div>
-                <div class="col-lg-3 ">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3  ">
                     <p class="text-dark-emphasis mt-lg-4 mt-sm-0 me-sm-0">Audio Description</p>
                 </div>
-                <div class="col-lg-3 ">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 ">
                     <p class="text-dark-emphasis mt-lg-4 mt-sm-0 me-sm-0">Help Center</p>
                 </div>
-                <div class="col-lg-3 ">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3  ">
                     <p class="text-dark-emphasis mt-lg-4 mt-sm-0">Gift Cards</p>
                 </div>
-                <div class="col-lg-3 ">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3  ">
                     <p class="text-dark-emphasis">Media Center</p>
                 </div>
-                <div class="col-lg-3 ">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3  ">
                     <p class="text-dark-emphasis">Investor Relations</p>
                 </div>
-                <div class="col-lg-3 ">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3  ">
                     <p class="text-dark-emphasis">Jobs</p>
                 </div>
-                <div class="col-lg-3 ">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3  ">
                     <p class="text-dark-emphasis">Terms of Use</p>
                 </div>
-                <div class="col-lg-3 ">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3  ">
                     <p class="text-dark-emphasis">Privacy</p>
                 </div>
-                <div class="col-lg-3 ">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3  ">
                     <p class="text-dark-emphasis">Legal Notices</p>
                 </div>
-                <div class="col-lg-3 ">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3  ">
                     <p class="text-dark-emphasis">Cookie Preference</p>
                 </div>
-                <div class="col-lg-3 ">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3  ">
                     <p class="text-dark-emphasis">Corporate Information</p>
                 </div>
-                <div class="col-lg-3 ">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 ">
                     <p class="text-dark-emphasis">Contact Us</p>
                 </div>
             </div>
